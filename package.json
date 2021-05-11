@@ -1,11 +1,27 @@
 {
   "name": "lukekosner.com",
-  "version": "1.0.0",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
+  "version": "0.0.1",
+  "description": "My website!",
+  "engines": {
+    "node": "14.x"
   },
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
-  }
+    
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "express": "^4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukekosner/site.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
