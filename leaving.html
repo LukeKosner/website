@@ -15,7 +15,7 @@ permalink: /leaving/
     <title>Redirecting</title>
   </head>
   <body>
-	  <h1>You are lukekosner.com</h1>
+	  <h1>You are leaving lukekosner.com</h1>
 	  <p id='where'>In 5 seconds, you will be redirected.</p>
   <style>
   	html {
@@ -28,7 +28,7 @@ permalink: /leaving/
 	  const queryString = window.location.search;
 	  const urlParams = new URLSearchParams(queryString);
 	  const redirectUrl = urlParams.get('url')
-	  document.getElementById("where").innerHTML = "You will be redirected to " + redirectUrl;
+	  document.getElementById("where").innerHTML = "You will be redirected to " + redirectUrl + " in 5 seconds.";
 	  
 	  function Redirect() {
                window.location = redirectUrl;
