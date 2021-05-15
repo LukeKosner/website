@@ -37,7 +37,7 @@ function goBack() {
 	  const queryString = window.location.search;
 	  const urlParams = new URLSearchParams(queryString);
 	  const redirectUrl = urlParams.get('url')
-	  document.getElementById("where").innerHTML = "You will be redirected to <a href=redirectUrl>" + redirectUrl + "</a> in 5 seconds.";
+	  document.getElementById("where").innerHTML = "You will be redirected to <a href=" + redirectUrl + ">" + redirectUrl + "</a> in 5 seconds.";
 	  
 	  function Redirect() {
                window.location = redirectUrl;
