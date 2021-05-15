@@ -17,7 +17,13 @@ permalink: /leaving/
   <body>
 	  <h1>You are leaving lukekosner.com</h1>
 	  <p id='where'>In 5 seconds, you will be redirected.</p>
-	  <button type="button" onclick="window.location.href='https://lukekosner.com';" class="btn btn-primary">Go Back</button>
+	  <button class="btn btn-primary" type="button" onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
   <style>
   	html {
 		text-align: center;
